@@ -1,0 +1,673 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@200&family=Titillium+Web:wght@300&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*unic section starts here*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    text-transform: capitalize;
+    list-style-type: none;
+
+}
+
+*::selection{
+    background-color: rgb(226, 226, 120);
+    color: rgb(73, 68, 68);
+}
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow:0.5rem 1.5rem rgba(0,0,0,.1);
+}
+section{
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: #eee;
+}
+.sub-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--green);
+    padding-top: 1rem;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.2rem;  
+}
+html::-webkit-scrollbar-track{
+    background: #222;
+   
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(189, 192, 36);
+    
+}
+
+
+
+
+/*unic section ends here*/
+
+
+/*header section starts here*/
+ header{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     background: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1% 7%;
+     z-index: 1000;
+     box-shadow: var(--box-shadow);
+}
+header .logo{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.logo i{
+    color: var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    color: var(--light-color);
+
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+
+}
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    transform: rotate(360deg);
+    background: var(--green);
+}
+header .icons #menu-bars{
+    display: none;
+}
+#search-form{
+     position: fixed;
+     top: -110%;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: 1004;
+     background: rgba(0,0,0,.8);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0 1rem;
+
+}
+#search-form.active{
+   top: 0;
+
+}
+
+#search-form #search-box{
+    width: 50rem;
+    border-bottom: 0.1rem solid #fff;
+    padding: 1rem 0;
+    font-size: 3rem;
+    color: #fff;
+    transform: none;
+    background: none;
+}
+#search-form #search-box::placeholder{
+    color: #eee;
+}
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#search-form label:hover{
+    color: var(--green);
+    
+}
+#search-form #close{
+     position: absolute;
+     cursor: pointer;
+     top: 2rem;
+     right: 3rem;
+     font-size: 5rem;
+     color: #fff;
+}
+
+
+
+
+/*header section ends here*/
+
+
+
+
+/*home section starts here*/
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 95vh;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.home .home-slider .image img{
+   width: 35rem;
+   
+}
+.home .home-slider .content span{
+    font-size: 2.5rem;
+    color: var(--green);
+    
+    
+}
+.home .home-slider .content h3{
+  font-size: 7rem;
+  color: var(--black);
+}
+.home .home-slider .content p{
+    font-size: 2.2rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+    line-height: 2.7rem;
+}
+.btn{
+    background-color: var(--black);
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.8rem 3rem;
+}
+.btn:hover{
+    background-color: var(--green);
+    letter-spacing: 0.2rem;
+}
+.swiper-pagination-bullet-active{
+    background: red;
+}
+
+
+
+
+/*home section ends here*/
+
+
+
+/*packeges section starts here*/
+.packeges .heading{
+    padding: 2.5rem 0;
+}
+.packeges .heading span{
+    font-size: 3.5rem;
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+.packeges .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.packeges .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: 0.6rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+.packeges .box-container .box img{
+    height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+.packeges .box-container .box .content {
+    padding: 2rem;
+}
+.packeges .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+.packeges .box-container .box .content h3 i{
+    color: var(--orange);
+}
+.packeges .box-container .box .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.packeges .box-container .box .stars i{
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+.packeges .box-container .box .price{
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+.packeges .box-container .box .price span{
+    color: #666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+/*packeges section ends here*/
+
+
+
+
+/*book section starts here*/
+.book .heading{
+    padding: 2.5rem 0;
+}
+.book .heading span{
+    font-size: 3.5rem;
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+.book .heading span.space{
+    background: none;
+}
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.book .row .image{
+    flex: 1 1 40rem;
+}
+.book .row .image img{
+    width: 100%;
+}
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: 0.5rem;
+}
+.book .row form .inputBox{
+    padding: 0.5rem 0;
+}
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+}
+
+/*book section ends here*/
+
+
+
+
+
+/*review section starts here*/
+.review .slide{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: 0.1rem solid rgba(0,0,0,.2);
+    border-radius: 0.5rem;
+    position: relative;
+}
+.review .slide .fa-quote-right{
+    font-size: 6rem;
+    position: absolute;
+    top: 2rem; right: 2rem;
+    color: #ccc;
+}
+.review .slide .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.review .slide .user h3{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    color: var(--black);
+}
+.review .slide .user i{
+    font-size: 1.3rem;
+    color: var(--green);
+}
+.review .slide p{
+     font-size: 1.5rem;
+     line-height: 1.8;
+     color: var(--light-color);
+}
+
+
+
+/*review section ends here*/
+
+
+
+/*gallery section starts here*/
+.gallery .heading span{
+    font-size: 3.5rem;
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: 1rem solid #fff;
+    border-radius: 0.5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallery .box-container .box .content{
+    position: absolute;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.7);
+    padding: 2rem;
+    padding-top: 5rem;
+
+} 
+.gallery .box-container .box:hover .content{
+    top: 0;
+}   
+.gallery .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+.gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 0.5rem 0;
+}
+
+
+
+/*gallery section ends here*/
+
+
+
+
+/*contact section starts here*/
+.contact .heading span{
+    font-size: 3.5rem;
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+}
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.contact .row .image{
+    flex: 1 1 35rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: 0.5rem;
+}
+.contact .row form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact .row form .inputBox input{
+    width: 49%;
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+}
+.contact .row form textarea{
+    resize: none;
+    width: 100%;
+    margin: 0.8rem 0;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: #333;
+    background: #f7f7f7;
+    text-transform: none;
+
+}
+
+/*contact section ends here*/
+
+
+
+
+
+/*footer section starts here*/
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+.footer .box-container .box{
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.footer .box-container .box a{
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    display: block;
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    border-top: 0.1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+::placeholder{
+    text-transform: capitalize;
+}
+
+/*footer section ends here*/
+
+
+/*loader section starts here*/
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loader-container img{
+    width: 35rem;
+}
+.loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+}
+
+
+
+/*loader section ends here*/
+
+
+
+
+
+
+
+
+
+/*media query starts here*/
+@media (max-width: 992px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}
+@media (max-width: 768px) {
+      header .icons #menu-bars{
+          display: inline-block;
+      }
+      header .navbar{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: #fff;
+          border-top: 0.1rem solid rgba(0,0,0,.2);
+          padding: 1rem;
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      nav.navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+      header .navbar a{
+          display: block;
+          padding: 1.5rem;
+          margin: 1rem;
+          font-size: 2rem;
+         
+      }
+      #search-form #search-box{
+        width: 90%;
+        margin: 0 1rem;
+       
+    }
+    .home .home-slider .slide{
+        flex-direction: column;
+    }
+    .home .home-slider .content h3{
+        font-size: 5rem;
+      }
+      .home .home-slider .slide{
+        height: 95vh;
+      
+    }
+    .order .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+    }
+    .order form .inputBox{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+     
+    
+}
+
+
+
+
+
+/*media query ends here*/
